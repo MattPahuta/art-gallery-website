@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,19 +12,39 @@
   <title>Frontend Mentor | Art gallery website</title>
 </head>
 <body>
-  <header>
-    <img src="assets/mobile/image-hero.jpg" alt="Two people admiring piece of  art">
-    <h1>Modern Art Gallery</h1>
 
-    <p>The arts in the collection of the Modern Art Gallery all started 
-    from a spark of inspiration. Will these pieces inspire you? Visit 
-    us and find out.</p>
-  
-    <button>Our location</button>
+  <header id="hero">
+    <div class="hero-container">
+
+      <div class="spacer-left"></div>
+
+      <picture>
+        <source>
+        <source>
+        <img src="./assets/mobile/image-hero@2x.jpg" alt="Two gallery patrons admiring a piece of art">
+      </picture>
+
+      <div class="spacer-right"></div>
+
+      <div class="hero-content">
+        <div class="container">
+          <div class="flex hero-text">
+            <h1>Modern<br> Art Gallery</h1>
+            <div class="flex hero-text-small">
+              <p>The arts in the collection of the Modern Art Gallery all started 
+                from a spark of inspiration. Will these pieces inspire you? Visit 
+                us and find out.</p>
+              <a href="#" class="button">Our location </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </header>
 
-  <main>
-    <section class="gallery-grid">
+  <!-- <main>
+    <section class="grid gallery-grid">
 
       <div class="gallery-grid-item">
         <img src="assets/mobile/image-grid-1.jpg" alt="Interior of art gallery">
@@ -56,14 +75,23 @@
   </main>
 
   <footer>
-    <h3>Modern Art Gallery</h3>
-    <p>The Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
-    <ul class="social-icons__list">
-      <li><img src="assets/icon-facebook.svg" alt="" class="social-icon"></li>
-      <li><img src="assets/icon-instagram.svg" alt="" class="social-icon"></li>
-      <li><img src="assets/icon-twitter.svg" alt="" class="social-icon"></li>
-    </ul>
-  </footer>
+    <div class="container">
+      <div class="flex footer-content">
+        <h3>Modern Art Gallery</h3>
+        <p>The Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
+        <div class="social-icons__list">
+          <a><img src="./assets/icon-facebook.svg" alt="" class="social-icon"></a>
+          <a><img src="./assets/icon-instagram.svg" alt="" class="social-icon"></a>
+          <a><img src="./assets/icon-twitter.svg" alt="" class="social-icon"></a>
+        </div>
+      </div>
+    </div>
 
+  </footer> -->
+
+  <!-- <div class="attribution">
+    Challenge by <a href="" target="_blank">Frontend Mentor</a>
+    Coded by <a href="#">Matt Pahuta</a>
+  </div> -->
 </body>
 </html>
