@@ -67,6 +67,8 @@ body {
   text-align: left;
   line-height: 1.6;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   color: var(--clr-black);
 }
 
@@ -279,13 +281,35 @@ p {
 }
 
 @media (min-width: 42em) {
-  
+
 }
 
 
 /* Footer Styles */
 
 footer {
+  margin-top: auto;
+  padding: 3rem 2rem;
   background-color: var(--clr-black);
   color: var(--clr-white);
+}
+
+.footer-content {
+  flex-direction: column;
+  align-items: start;
+}
+
+.footer-content h3 {
+  font-size: 1.5rem;
+}
+
+.footer-content p {
+  font-size: 1rem;
+  padding: 2.375rem 0;
+}
+
+.social-icons__list {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.275rem;
 }
