@@ -19,19 +19,19 @@
 
 
   /* font sizes */
-  /* Heading (XL) - 96px/88px line space */
+  /* Heading (XL) - 96px/88px line height */
   --fs-800: 6rem;
-  /* Heading (L) - 70px/70px line space */
+  /* Heading (L) - 70px/70px line height */
   --fs-700: 4.375rem;
-  /* Heading (M) - 60px/50px line space */
+  /* Heading (M) - 60px/50px line height */
   --fs-600: 3.75rem;
-  /* Heading (S) - 50px */
+  /* Heading (S) - 50px/45px */
   --fs-550: 3.125rem;
-  /* Heading (S) - 36px/36px line space */
+  /* Heading (S) - 36px/36px line height */
   --fs-500: 2.25rem;
-  /* Body (M) - 22px/32px line space */
+  /* Body (M) - 22px/32px line */
   --fs-400: 1.375rem;
-  /* Body (S) - 18px/28px line space */
+  /* Body (S) - 18px/28px line  */
   --fs-300: 1.125rem;
 }
 
@@ -116,13 +116,32 @@ select {
   position: relative;
 }
 
+.inverse {
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+}
+
 /* Typography */
 
 h1, h2, h3, h4 {
   font-family: var(--ff-heading);
   text-transform: uppercase;
+  line-height: 0.9;
 }
 
+h2 {
+  font-size: var(--fs-550);
+  padding: .5em 0;
+}
+
+p {
+  font-size: var(--fs-300);
+}
+
+/* placeholder width value */
+@media (min-width: 42em) {
+
+}
 
 /* Components */
 
@@ -200,8 +219,67 @@ h1, h2, h3, h4 {
   gap: 2rem;
 }
 
-.hero-text-small p {
+/* .hero-text-small p {
   font-size: var(--fs-300);
+} */
+
+/* Gallery Grid Styles */
+
+/* .gallery-grid {
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+
+} */
+
+.gallery-grid {
+	padding-top: 7.5rem;
+	padding-bottom: 7.5rem;
+	gap: 1rem;
+	grid: 
+    "grid-pic-1" 
+    "grid-text-1" 
+    "grid-pic-2" 
+    "grid-pic-3" 
+    "grid-text-2";
+}
+
+
+.grid-pic-1 {
+  grid-area: grid-pic-1;
+}
+
+.grid-pic-2 {
+  grid-area: grid-pic-2;
+}
+
+.grid-pic-3 {
+  grid-area: grid-pic-3;
+}
+
+.grid-text-1 {
+  flex-direction: column;
+  grid-area: grid-text-1;
+}
+
+.grid-text-1 {
+  grid-area: grid-text-1;
+}
+
+.grid-text-2 {
+  grid-area: grid-text-2;
+  padding: 3rem 1.5rem;
+}
+
+.grid-text-2 h2 {
+  padding-top: 0;
+}
+
+.grid-text__inner {
+  flex-direction: column;
+}
+
+@media (min-width: 42em) {
+  
 }
 
 
