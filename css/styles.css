@@ -178,18 +178,40 @@ p {
   justify-content: center;
   align-items: center;
   transition: inherit;
+}
 
+.back-button {
+  margin-left: -1rem;
+  padding-right: initial;
+  padding-left: 3.5rem;
+}
+
+.back-button::after {
+  content: url('../assets/icon-arrow-left.svg');
+  left: 0;
 }
 
 .button:hover,
-.button:focus {
+.button:focus,
+.back-button:hover,
+.back-button:focus {
   background-color: var(--clr-gold);
 }
 
 .button:hover::after,
-.button:focus::after {
+.button:focus::after,
+.back-button:hover::after,
+.back-button:focus::after {
   background-color: var(--clr-black);
 }
+
+/* container for location page button */
+.btn-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 
 /* Hero Styles */
 
@@ -284,6 +306,45 @@ p {
 
 }
 
+/* Location Page Styles */
+
+.location-container {
+  padding: 3rem 0;
+  flex-direction: column;
+}
+
+.local-heading {
+  font-size: var(--fs-550);
+}
+
+.contact-details {
+  flex-direction: column;
+}
+
+.contact-details p:first-of-type {
+  color: var(--clr-gold);
+  font-family: var(--ff-heading);
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.location-map picture {
+
+}
+
+@media (min-width: 42em) {
+  .back-button {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 68em) {
+  .contact-details p:first-of-type {
+    font-size: var(--fs-500);
+  }
+}
 
 /* Footer Styles */
 
