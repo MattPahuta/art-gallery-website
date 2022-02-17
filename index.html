@@ -14,22 +14,26 @@
 <body>
 
   <header id="hero">
-    <div class="hero-container">
+    <!-- grid container -->
+    <div class="grid hero-container">
 
+      <!-- grid item -->
       <div class="spacer-left"></div>
-
-      <picture>
-        <source>
-        <source>
+      <!-- grid item -->
+      <picture class="hero-pics">
+        <source media="(min-width: 68em)" srcset="./assets/desktop/image-hero@2x.jpg">
+        <source media="(min-width: 42em)" srcset="./assets/tablet/image-hero@2x.jpg">
         <img src="./assets/mobile/image-hero@2x.jpg" alt="Two gallery patrons admiring a piece of art">
       </picture>
 
-      <div class="spacer-right"></div>
-
+      <!-- <div class="spacer-right"></div> -->
+      <!-- grid item -->
       <div class="hero-content">
         <div class="container">
+          <!-- container for hero text -->
           <div class="flex hero-text">
             <h1>Modern<br> Art Gallery</h1>
+            <!-- container for smaller hero text -->
             <div class="flex hero-text-small">
               <p>The arts in the collection of the Modern Art Gallery all started from a spark of inspiration. Will these pieces inspire you? Visit 
                 us and find out.</p>
@@ -106,7 +110,7 @@
         </div>
 
       </div>
-      
+
     </div>
 
   </footer>
