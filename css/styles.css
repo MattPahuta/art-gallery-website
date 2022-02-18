@@ -343,6 +343,47 @@ p {
   .hero-text h1 {
     font-size: var(--fs-700);
   }
+
+  .gallery-grid {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+
+    gap: .75rem;
+    grid: 
+      " grid-text-1 grid-pic-1 grid-pic-1" 
+      " grid-pic-2 grid-pic-2 grid-pic-3" 
+      " grid-pic-2 grid-pic-2 grid-text-2";
+    grid-template-columns: 1fr minmax(1rem, 16%) 1fr;
+  }
+
+  .grid-text {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .grid-text__inner {
+    flex-direction: column;
+    /* gap: 1.5rem; */
+  }
+
+  .grid-text__inner h2 {
+    padding-bottom: 1.5rem;
+    padding-top: 0;
+  }
+
+  .grid-text-2 {
+    padding: 5.3rem 1.75rem;
+  }
+
+  /* .grid-text-1 .grid-text__inner {
+    max-width: 82%;
+  } */
+
+  .grid-text__inner {
+    max-width: 14rem;
+  }
+
+
 }
 
 
