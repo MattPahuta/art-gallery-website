@@ -13,13 +13,10 @@
 </head>
 <body>
 
-  <header id="hero">
-    <!-- grid container -->
-    <div class="flex grid hero-container">
-
-      <!-- flex/grid item -->
-      <div class="spacer-left"></div> 
-      <!-- flex/grid item -->
+  <header id="hero" class="flex hero">
+      <!-- flex item -->
+      <div class="desktop spacer spacer-left"></div> 
+      <!-- flex item -->
       <picture class="hero-pics">
         <source media="(min-width: 68em)" srcset="./assets/desktop/image-hero@2x.jpg">
         <source media="(min-width: 42em)" srcset="./assets/tablet/image-hero@2x.jpg">
@@ -27,9 +24,10 @@
       </picture>
 
 
-      <!-- flex/grid item -->
+      <!-- flex item -->
       <div class="hero-content">
-        <div class="container">
+        <div class="flex container">
+
           <!-- container for hero text -->
           <div class="flex hero-text">
             <h1>Modern<br> Art Gallery</h1>
@@ -40,15 +38,15 @@
               <a href="location.html" class="button">Our location </a>
             </div>
           </div>
+
         </div>
       </div>
-      <!-- flex/grid item -->
-      <div class="spacer-right"></div>
 
-    </div>
+      <!-- flex item -->
+      <div class="desktop spacer spacer-right"></div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="grid container gallery-grid">
 
       <div class="grid-pic-1">
@@ -98,7 +96,7 @@
     
   </main>
 
-  <footer class="home-footer">
+  <footer id="footer" class="home-footer">
     <div class="container">
 
       <div class="flex footer-content">

@@ -68,6 +68,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: var(--clr-white);
   color: var(--clr-black);
 }
 
@@ -272,6 +273,7 @@ p {
   gap: 2rem;
 }
 
+/* gallery grid layout */
 .gallery-grid {
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
@@ -319,28 +321,21 @@ p {
 }
 
 @media (min-width: 42em) {
-  .hero-container {
-    grid-template-columns: repeat(7, 1fr);
-    /* border: 5px solid var(--clr-gold); */
+
+  .hero .hero-content {
+    padding: 0;
+    position: absolute;
+    inset: 0;
   }
 
-  .hero-pics,
-  .hero-content {
-    grid-row: 1 / 2;
+  .hero-content .container {
+    height: 100%;
+    align-items: center;
   }
 
   .hero-pics {
-    grid-column: 1 / 5;
-  }
-
-  .hero-content {
-    grid-column: 4 / -1;
-    align-self: center;
-    padding: 0;
-  }
-
-  .hero-pics img {
-    max-height: 700px;
+    width: 57%;
+    /* height: auto; */
   }
 
   .hero-text,
@@ -349,13 +344,14 @@ p {
   }
 
   .hero-text {
-    padding-left: 1rem;
+    padding-left: 50%;
   }
 
+
+  /* gallery grid - tablet */
   .gallery-grid {
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
-
     gap: 0.75rem;
     grid:
       " grid-text-1 grid-pic-1 grid-pic-1"
@@ -389,19 +385,32 @@ p {
 }
 
 @media (min-width: 68em) {
-  /* handle header grid - desktop */
-  .hero-container {
-    /* grid-template-columns: repeat(7, 1fr); */
-    grid-template-columns: 31.25% 37.5% 31.25%;
-    /* grid-template-rows: repeat(4, 1fr); */
-    /* border: 5px solid var(--clr-gold); */
-    /* grid: 
-      "spacer-left hero-pic hero-content" */
+
+  .hero .spacer {
+    flex-grow: 1;
   }
+
+  .hero .spacer-left {
+    z-index: 1;
+    background-color: var(--clr-white);
+    mix-blend-mode: difference;
+  }
+
+  .desktop {
+    display: initial;
+  }
+
+
+  .hero-pics {
+    width: 37.5%;
+    max-width: 45rem;
+  }
+
 
   .hero-text {
     flex-direction: row;
     padding-left: 0;
+    margin-top: -11%;
   }
 
   .hero-text,
@@ -409,36 +418,15 @@ p {
     gap: 4rem;
   }
 
-  .hero-text h1 {
-    color: plum;
-  }
-
   .hero-text-small p {
     max-width: 24ch;
   }
 
-  .hero-content {
-    grid-column: 1 / -1;
-  }
 
-  .spacer-left {
-    grid-column: 1 / 2;
-    background-color: var(--clr-black);
-  }
-
-  .hero-pics {
-    grid-column: 2 / 3;
-  }
-
-  .spacer-right {
-    grid-column: 3 / -1;
-  }
-
-  .hero-pics img {
-    max-height: 800px;
-  }
-
+  /* desktop gallery grid */
   .gallery-grid {
+    padding-top: 11.25rem;
+    padding-bottom: 11.25rem;
     gap: 1.875rem;
   }
 
