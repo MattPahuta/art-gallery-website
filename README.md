@@ -28,9 +28,8 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-![The homepage hero](./screenshots/art-gallery-hero.jpg "Hero section")
-![The gallery grid](./screenshots/art-gallery-grid.jpg "Gallery grid")
-![The location page map](.screenshots/art-gallery-map.jpg "Location map")
+![The homepage](./screenshots/art-gallery-home.jpg "Hero section")
+![The location page map](./screenshots/art-gallery-map.jpg "Location map")
 
 ### Links
 
