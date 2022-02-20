@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-twopage-site-using-css-grid-and-flexbox--vDSb8yNr)
-- Live Site URL: [Add live site URL here](https://mattpahuta.github.io/art-gallery-website/index.html)
+- [Solution URL](https://www.frontendmentor.io/solutions/responsive-twopage-site-using-css-grid-and-flexbox--vDSb8yNr)
+- [live site URL](https://mattpahuta.github.io/art-gallery-website/index.html)
 
 ## My process
 
