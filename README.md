@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-twopage-site-using-css-grid-and-flexbox--vDSb8yNr)
+- Live Site URL: [Add live site URL here](https://mattpahuta.github.io/art-gallery-website/index.html)
 
 ## My process
 
@@ -79,7 +79,7 @@ The link buttons were a lot of trial and error getting the positioning correct a
 
 I wasted a fair amount of time trying to use CSS Grid for the home page header before finally realizing that Flexbox was going to be a more straightforward solution. I need to continue to get better at planning and anticipating the various layouts before chasing a method that's not working. 
 
-The version 2 of this site will be to integrate the leaflet JavaScript library to replace the the static map image with an interactive solution.
+The version 2 of this site will be to integrate the leaflet JavaScript library to replace the the static map image with an interactive solution. Also, need to resolve a few lingering accessibility issues.
 
 ## Author
 
